@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="assets/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">Dhea Natalya</a>
+      </div>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skill">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="extra-nav">
+        <button>Get In Touch</button>
+      </div>
+
+      <div id="menu" class="hamburger-menu">
+        <svg
+          width="35px"
+          height="35px"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#ffffff"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="nav-mobile" class="mobile-nav">
+        <div id="close-mobile" class="close">
+          <svg
+            width="800px"
+            height="800px"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                  stroke: #ffffff;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-width: 2px;
+                }
+              </style>
+            </defs>
+
+            <title />
+
+            <g id="cross">
+              <line class="cls-1" x1="7" x2="25" y1="7" y2="25" />
+
+              <line class="cls-1" x1="7" x2="25" y1="25" y2="7" />
+            </g>
+          </svg>
+        </div>
+        <ul>
+          <li><a class="nav-link" href="#">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skilll">Skilll</a></li>
+          <li><a class="nav-link" href="#project">Project</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="content">
+          <svg viewBox="0 0 1500 500" data-aos="fade-down">
+            <text x="50%" y="50%" text-anchor="middle">MY PORTFOLIO</text>
+          </svg>
+          <br />
+          <h1 data-aos="zoom-in-up">
+            I am <span>Dhea Alexandra</span> Software Engineering Student
+          </h1>
+          <button data-aos="zoom-out" onclick="scrollToContent()">
+            <span>Show my Work</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <div id="target-section">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="content">
+            <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+              About Me
+            </h1>
+            <div class="about-me">
+              <div
+                data-aos="zoom-out-right"
+                data-aos-delay="300"
+                class="profile"
+              >
+                <div class="image-box">
+                  <img src="assset/dhea.jpg" alt="profile" />
+                </div>
+              </div>
+
+              <div
+                data-aos="zoom-in-left"
+                data-aos-delay="300"
+                class="description"
+              >
+                <div class="name-role">
+                  <h1>Dhea Alexandra Natalya A.</h1>
+                  <div class="role">
+                    <h2>Software Engineering Student</h2>
+                  </div>
+                </div>
+                <p>
+                  Halo! Perkenalkan aku
+                  <strong>Dhea Alexandra Natalya A.</strong>, siswi dari
+                  <strong>SMK Negeri 2 Tabanan</strong> yang saat ini sedang
+                  menempuh pendidikan di jurusan
+                  <strong>Rekayasa Perangkat Lunak (RPL)</strong>. Aku sangat
+                  antusias dan semangat dalam dunia teknologi, khususnya dalam
+                  pengembangan perangkat lunak dan pemrograman.
+                </p>
+                <br />
+                <p>
+                  Selama belajar di RPL, aku telah mempelajari beberapa bahasa
+                  pemrograman seperti <strong>HTML</strong>,
+                  <strong>CSS</strong>, <strong>JavaScript</strong>,
+                  <strong>Java</strong>, <strong>My SQL</strong>, dan
+                  <strong>C</strong>. Aku juga memahami dasar-dasar pengembangan
+                  aplikasi desktop dan web.
+                </p>
+                <br />
+                <p>
+                  Beberapa project yang sudah aku kerjakan antara lain
+                  <strong
+                    >kasir berbasis desktop, menu cafe berbasis web, dan landing
+                    page sederhana untuk usaha kecil.</strong
+                  >
+                  Aku sangat suka menggabungkan coding dengan desain agar
+                  hasilnya nggak cuma fungsional tapi juga estetik
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="skill" class="skill">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Skill
+          </h1>
+
+          <div class="skills" data-aos-delay="500">
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/html5.svg" alt="html" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/css3.svg" alt="css" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/javascript.svg" alt="javascript" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/mysql.svg" alt="mysql" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/github.svg" alt="github" />
+            </div>
+            <div data-aos="zoom-in-down" class="skill-box">
+              <img src="assset/181_Java_logo_logos-512.webp" alt="github" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" class="project">
+      <div class="container">
+        <div class="content">
+          <h1 data-aos="zoom-in-down" data-aos-delay="300" class="title">
+            Project
+          </h1>
+
+          <div class="projects">
+            <div data-aos="zoom-in-down" data-aos-delay="300" class="card">
+              <img src="project/kasirmn1.png" alt="project" />
+              <img src="project/kasir 1.png" alt="project" />
+
+              <div class="description">
+                <h1>Kasir 0.1</h1>
+                <p>
+                  Ini project
+                  <strong>Aplikasi Kasir berbasis desktop</strong> "pertama"
+                  yang aku buat, fiturnya masih belum complex, ini menggunakan
+                  <strong>JAVA Swing NetBeans dan Database My SQL</strong>
+                </p>
+                <div class="action">
+                  <button>My SQL</button>
+                  <button>JAVA</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="project/menukaasir.png" alt="project" />
+              <img src="project/kasir2.png" alt="project" />
+
+              <div class="description">
+                <h1>Kasir 0.2</h1>
+                <p>
+                  <strong>Aplikasi Kasir berbasis desktop</strong> "kedua" yang
+                  aku buat, fiturnya sudah lumayan complex, sama seperti tadi
+                  ini juga menggunakan
+                  <strong>JAVA Swing NetBeans dan Database My SQL</strong>
+                </p>
+                <div class="action">
+                  <button>My SQL</button>
+                  <button>JAVA</button>
+                </div>
+              </div>
+            </div>
+            <div data-aos="zoom-in-down" data-aos-delay="500" class="card">
+              <img src="project/game1.png" alt="project" />
+              <img src="project/game 2.png" alt="project" />
+
+              <div class="description">
+                <h1>project game</h1>
+                <p>
+                  Ini adalah project game pertama yang aku buat, dibuat
+                  menggunakan Godot Engine dan bahasa pemrograman GDScript.
+                </p>
+                <div class="action">
+                  <button>godot</button>
+                  <button>GDScript</button>
+                </div>
+              </div>
+            </div>
+
+            <div data-aos="zoom-in-down" data-aos-delay="400" class="card">
+              <img src="project/web.png" alt="project" />
+              <img src="project/web1.png" alt="project" />
+
+              <div class="description">
+                <h1>WEB COFFEE SHOP</h1>
+                <p>
+                  Ini salah satu web yang aku buat, lumayan complex karna dibuat
+                  dengan html, css, js, dan My SQL
+                </p>
+                <div class="action">
+                  <button>HTML</button>
+                  <button>CSS</button>
+                  <button>JavaScript</button>
+                  <button>My SQL</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="social-icons">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/dhea.natalyaa/" target="_blank">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+          alt="Instagram Nanaa"
+        />
+        <h2>dhea.natalyaa</h2>
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/6281932403199" target="_blank">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/220/220236.png"
+          alt="WhatsApp Nanaa"
+        />
+        <h2>+62 819-3240-3199</h2>
+      </a>
+
+      <!-- Gmail -->
+      <a href="mailto:dheanatalyaa@gmail.com">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+          alt="Gmail Nanaa"
+        />
+        <h2>dheanatalyaa@gmail.com</h2>
+      </a>
+    </div>
+    <br />
+    <div class="maps">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.213672819578!2d115.17002105712888!3d-8.47324509856193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd225a5d7bf114d%3A0xedd07cafdb4b6a08!2sPembayaran%20listrik%20kakek%20balon!5e1!3m2!1sid!2sid!4v1747904315719!5m2!1sid!2sid"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Box Icon -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function scrollToContent() {
+        document
+          .getElementById("target-section")
+          .scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+  </body>
+</html>
